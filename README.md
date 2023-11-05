@@ -14,7 +14,7 @@ cd /home/USER/.config/HyprV/waybar/scripts
 
 mv power_profile power_profile.save
 
-git clone ...
+git clone https://github.com/lkopik/hyprland_Temperaturecheck.git
 
 mv /hyprland_Temperaturecheck/power_profile /home/USER/.config/HyprV/waybar/scripts/power_profile
 
