@@ -16,7 +16,7 @@ mv power_profile power_profile.save
 
 git clone https://github.com/lkopik/hyprland_Temperaturecheck.git
 
-mv /hyprland_Temperaturecheck/power_profile /home/USER/.config/HyprV/waybar/scripts/power_profile
+mv hyprland_Temperaturecheck/power_profile /home/USER/.config/HyprV/waybar/scripts/power_profile
 
 chmod +x power_profile
 
