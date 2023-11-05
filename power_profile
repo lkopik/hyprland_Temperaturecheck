@@ -1,0 +1,17 @@
+#PWR=$(asusctl profile -p | sed s:'Active profile is'::)
+
+CP=$( sensors | grep "Tctl" | cut -b16-17)
+
+
+if (( $CP == $CP )); then
+    text="$CP°C"
+    tooltip="CPU temperature"
+fi
+
+echo '{"text": "'$text'", "tooltip": "'$tooltip'"}'
+
+if [[ "$1" == "next" ]]; then
+    asusctl profile -n; pkill -SIGRTMIN+8 waybar
+    get_pwr
+    notify-send -h string:x-canonical-private-synchronous:sys-notify -u l>
+fi
