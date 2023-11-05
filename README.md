@@ -7,8 +7,15 @@ if you want see temperature... use my config
 
 
 # INSTALL
-git clone ..
 
+sudo su
 
-dfgd
+cd /home/USER/.config/HyprV/waybar/scripts
 
+mv power_profile power_profile.save
+
+git clone ...
+
+mv /hyprland_Temperaturecheck/power_profile /home/USER/.config/HyprV/waybar/scripts/power_profile
+
+reboot
