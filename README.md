@@ -7,5 +7,8 @@ if you want see temperature... use my config
 
 
 # INSTALL
+git clone ..
 
+
+dfgd
 
