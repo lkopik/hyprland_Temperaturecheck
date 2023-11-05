@@ -15,5 +15,5 @@ echo '{"text": "'$text'", "tooltip": "'$tooltip'"}'
 if [[ "$1" == "next" ]]; then
     asusctl profile -n; pkill -SIGRTMIN+8 waybar
     get_pwr
-    notify-send -h string:x-canonical-private-synchronous:sys-notify -u l>
+    notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "$CP CPU temperature"
 fi
