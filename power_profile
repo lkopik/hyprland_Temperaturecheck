@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #PWR=$(asusctl profile -p | sed s:'Active profile is'::)
 
 CP=$( sensors | grep "Tctl" | cut -b16-17)
